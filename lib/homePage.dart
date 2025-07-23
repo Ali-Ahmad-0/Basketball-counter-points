@@ -42,7 +42,7 @@ class Homepage extends StatelessWidget {
                         '$incrementA',
                         style: const TextStyle(
                           fontSize: 100,
-                          fontFamily: '',
+                          fontFamily: 'georgia',
                         ),
                       ),
                       ElevatedButton(
@@ -114,7 +114,10 @@ class Homepage extends StatelessWidget {
                       const Text('Guest', style: TextStyle(fontSize: 35)),
                       Text(
                         '$incrementB',
-                        style: const TextStyle(fontSize: 100),
+                        style: const TextStyle(
+                          fontSize: 100,
+                          fontFamily: 'georgia',
+                        ),
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
@@ -181,7 +184,10 @@ class Homepage extends StatelessWidget {
                   backgroundColor: Colors.blue,
                   minimumSize: const Size(150, 50),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  incrementB = 0;
+                  incrementA = 0;
+                },
                 child: const Text(
                   'Reset',
                   style: TextStyle(fontSize: 32, color: Colors.black),
